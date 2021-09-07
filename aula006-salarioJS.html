@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+         margin:0;
+         padding: 0;
+         box-sizing: 0;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         text-decoration: none;
+        }
+        
+        .container{
+            text-align: center;
+            max-width: 1000px;
+            margin:100px auto;
+        }
+        form{
+            max-width: 500px;
+            margin:10px auto;
+            border: 1px solid black;
+        }
+        
+        .container-title{
+           
+            background-color: gray;
+           
+        }
+        .container-title legend{
+            padding:10px;
+            font-size: 2rem;
+        }
+        .container p{
+            text-align: justify;
+            max-width:350px;
+            margin:3px auto;
+            font-size: 1.2rem;
+        }
+        .container h2{
+           
+            margin:5px;
+            padding:3px;
+        }
+        form input{
+            padding:10px;
+            margin:10px;
+            font-size: 1.5rem;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Essa foi uma que eu fiz em JS</h1>
+        <hr>
+        <form>
+            <div class="container-title">
+                <legend id="text-speed1">Cálculo de Salário líquido</legend>
+            </div>
+            
+           
+            
+            <input type="number" placeholder="Informe seu salário" id="salario" onkeyup="salarioBruto();">
+               
+    
+        
+            <!-- <button type="button" onclick="salarioBruto();">Calcular</button> -->
+
+            <p id="text-salario">
+
+            </p>
+            <p id="text-inss">
+
+            </p>
+          
+            <p id="text-IR">
+              
+            </p>
+           
+           
+            <p id="text-salario-liquido">
+
+            </p>
+            <p id="text-fgts">
+
+            </p>
+           
+            <h2 id="text-total"></h2>
+       </form>
+
+
+    </div>
+    
+   <script>
+     
+                    
+
+    function salarioBruto(){
+        let salarioCalc = parseFloat(document.getElementById("salario").value);
+        
+        let impostoRenda, inss, fgts=salarioCalc*0.08, total=0, salarioLiquido=0;
+
+        
+         
+ 
+            if(salarioCalc>0){
+                /* INSS */
+                if(salarioCalc<=1100){
+                    inss=salarioCalc * 0.075;
+                    
+                }
+                if(salarioCalc>1100 && salarioCalc<=2203.48){
+                        inss=((salarioCalc-1100)*0.09) + 82.50;
+                    
+                }
+                if(salarioCalc>2203.48 && salarioCalc<=3305.22){
+                    inss= ((salarioCalc-2203.48)*0.12) + 82.50 +99.31;
+                    
+                }
+                if(salarioCalc>3305.22 && salarioCalc<=6433.57){
+                        inss=((salarioCalc-3305.22)*0.14) + 82.50 +99.31 + 132.21;
+                    
+                }
+                if(salarioCalc>6433.58){
+                    inss= 437.97 + 82.50 +99.31 + 132.21;
+                }
+            /*imposto de Renda */
+                
+                if(salarioCalc<1903.98 ){
+                    impostoRenda = 0;
+                }
+                if(salarioCalc>1903.98 && salarioCalc<2826.65){
+                    impostoRenda = salarioCalc * 0.075;
+                }
+                if(salarioCalc>2826.65 && salarioCalc<3751.05){
+                    impostoRenda = salarioCalc*0.15;
+                }
+                if(salarioCalc>3751.05 && salarioCalc<4664.68){
+                        impostoRenda= salarioCalc * 0.225
+                }
+                if(salarioCalc>4664.68){
+                    impostoRenda= salarioCalc * 0.275;
+                }
+                salarioLiquido = salarioCalc - impostoRenda -inss;
+                total = salarioLiquido +fgts;
+                document.getElementById("text-salario").innerHTML = "O <strong>Salário BRUTO</strong> é de: R$"+ salarioCalc.toFixed(2);
+                document.getElementById("text-salario-liquido").innerHTML = "O <strong>Salário Líquido</strong> é de: R$"+ salarioLiquido.toFixed(2);
+                document.getElementById("text-total").innerHTML = "O Salário Líquido + FGTS É: R$"+ total.toFixed(2);
+                document.getElementById("text-fgts").innerHTML = "O <strong>FGTS</strong> É: (+)R$"+ fgts.toFixed(2);
+                document.getElementById("text-IR").innerHTML = "O<strong> Imposto de Renda</strong>:(-)R$"+ impostoRenda.toFixed(2)+"<hr>";
+                document.getElementById("text-inss").innerHTML = "O <strong>INSS</strong>: (-)R$"+ inss.toFixed(2);
+
+                document.getElementById("text-total").style.backgroundColor =" yellow";
+
+            }else{
+                document.getElementById("text-salario").innerHTML = "";
+                document.getElementById("text-salario-liquido").innerHTML = "";
+                
+                document.getElementById("text-fgts").innerHTML = "";
+                document.getElementById("text-IR").innerHTML = "";
+                document.getElementById("text-inss").innerHTML = "";
+                document.getElementById("text-total").innerHTML = "Informe um salário VÁLIDO!";
+                document.getElementById("text-total").style.backgroundColor =" red";
+            }
+                
+    }
+
+   </script>
+</body>
+</html>
