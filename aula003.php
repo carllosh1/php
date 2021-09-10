@@ -3,7 +3,7 @@ ECHO "<h2>Peguei alguns exercícios que eu fiz em C</h2> <br>";
  ECHO "<h4>1) Faça um programa que utilize switch</h4>";
 ?>
 
-<form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+<form action="<?=$_SERVER['PHP_SELF'];?>#1" id="1" method="POST">
         <p>Digite o id do aluno:</p>
         <input type="number" name="idAluno" id="idAlunoId">
         <button type="submit">Resultado</button>
@@ -66,7 +66,7 @@ ECHO "<h2>Peguei alguns exercícios que eu fiz em C</h2> <br>";
 ?>
 
 
-<form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+<form action="<?=$_SERVER['PHP_SELF'];?>#2" id="2" method="POST">
         <p>Digite um valor inteiro para sacar:</p>
         <input type="number" name="saque" id="saqueId" placeholder="R$100">
         <button type="submit">Resultado</button>
@@ -120,7 +120,7 @@ $cem=0; $cinquenta=0; $vinte=0; $dez=0; $cinco=0; $dois=0;
 <?php
  ECHO "<h4>3) Faça um programa que utilize do while</h4>";
 ?>
-<form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+<form action="<?=$_SERVER['PHP_SELF'];?>#3" id="3" method="POST">
         <p>Tente acertar um número aleatório de 1 a 10:</p>
         <input type="number" name="nmb" id="nmbId">
         <button type="submit">Resultado</button>
@@ -144,7 +144,7 @@ if(isset($_POST['nmb'])){
  ECHO "<h4>3) Faça um programa que utilize for</h4>";
 ?>
 
-<form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+<form action="<?=$_SERVER['PHP_SELF'];?>#4" id="4" method="POST">
         <p>Descubra se o número é primo:</p>
         <input type="number" name="numero1" id="numero1Id">
         <button type="submit">Resultado</button>
@@ -176,7 +176,7 @@ if(isset($_POST['numero1'])){
 <?php
  ECHO "<h4>5) Faça um programa que utilize break</h4>";
 ?>      
-	<form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+	<form action="<?=$_SERVER['PHP_SELF'];?>#5" id="5" method="POST">
 		<p>Digite um número(1 a 10) e veja seus antecessores, caso você digite o número escondido o sistema vai parar:</p>
 		<input type="number" name="numero2" id="numero2Id">
 		<button type="submit">Resultado</button>
@@ -200,7 +200,7 @@ if(isset($_POST['numero1'])){
 <?php
  ECHO "<h4>6) Faça um programa que utilize continue</h4>";
 ?>          
-	<form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+	<form action="<?=$_SERVER['PHP_SELF'];?>#6" id="6" method="POST">
 		<p>Digite um número de (1 a 10) para o sistema tentar acertar:</p>
 		<input type="number" name="numero3" id="numero3Id">
 		<button type="submit">Resultado</button>

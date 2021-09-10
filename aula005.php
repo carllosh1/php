@@ -51,7 +51,7 @@
          
         <div class="container ">
             <h4>Função 1: </h4> 
-            <form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+            <form action="<?=$_SERVER['PHP_SELF'];?>#1" id="1" method="POST">
             <p>Digite um número para calcular o fatorial:</p>
             <input type="number" name="fatorial" id="fatorialId">
             <button type="submit">Resultado</button>
@@ -82,7 +82,7 @@
         </div>
         <div class="container ">
             <h4>Função 2: </h4> 
-            <form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+            <form action="<?=$_SERVER['PHP_SELF'];?>#2" id="2" method="POST">
             <p>Digite os valores de A, B e C de uma equação do 2°grau (ax²+bx+c=0):</p>
             <input type="number" name="a" id="aId" placeholder="a">
             <input type="number" name="b" id="bId" placeholder="b">
@@ -115,7 +115,7 @@
        </div>
        <div class="container ">
             <h4>Função 3: </h4> 
-            <form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+            <form action="<?=$_SERVER['PHP_SELF'];?>#3" id="3" method="POST">
             <p>Digite um valor para efetuar um saque:</p>
             <input type="number" name="saque" id="saqueId">
             <button type="submit">Resultado</button>
@@ -171,7 +171,7 @@
        </div>
        <div class="container ">
             <h4>Função 4: </h4> 
-            <form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+            <form action="<?=$_SERVER['PHP_SELF'];?>#4" id="4" method="POST">
                 <p>Descubra se o número é primo:</p>
                 <input type="number" name="nmb" id="nmbId">
                 <button type="submit">Resultado</button>

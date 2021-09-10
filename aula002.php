@@ -86,7 +86,7 @@ $NASCIMENTO = "13/09/2001";
  a. m.</h4>";
 ?>
 
-<form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+<form action="<?=$_SERVER['PHP_SELF'];?>#10" id="10" method="POST">
         <p>Digite valor do depósito:</p>
         <input type="number" name="deposito" id="depositoId">
         <button type="submit">Resultado</button>
@@ -109,7 +109,7 @@ $NASCIMENTO = "13/09/2001";
  veja um exemplo de saída: MARIA, VOCÊ JÁ VIVEU 6935 DIAS.</h4>";
 ?>
 
-<form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+<form action="<?=$_SERVER['PHP_SELF'];?>#11" id="11" method="POST">
         <p>Digite sua idade:</p>
         <input type="number" name="idade1" id="idadeId">
         <button type="submit">Resultado</button>
@@ -131,7 +131,7 @@ $NASCIMENTO = "13/09/2001";
  o número de votos brancos, nulos e válidos. Calcular e escrever o percentual
  que cada um representa em relação ao total de eleitores</h4>";
 ?>
-<form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+<form action="<?=$_SERVER['PHP_SELF'];?>#12" id="12" method="POST">
         <p>Digite o número total de eleitores do seu município:</p>
         <input type="number" name="eleitores" id="eleitoresId">
 
@@ -172,7 +172,7 @@ $NASCIMENTO = "13/09/2001";
  aplicar um percentual de reajuste, calcular e escrever o valor do novo salário.</h4>";
 ?>
 
-<form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+<form action="<?=$_SERVER['PHP_SELF'];?>#13" id="13" method="POST">
         <p>Digite seu salário:</p>
         <input type="number" name="salario1" id="salario1Id">
         <button type="submit">Resultado</button>
@@ -196,7 +196,7 @@ $NASCIMENTO = "13/09/2001";
 ?>
 
 
-<form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+<form action="<?=$_SERVER['PHP_SELF'];?>#14" id="14" method="POST">
         <p>Digite o preço do carro de fábrica:</p>
         <input type="number" name="precoCarro" id="precoCarroId">
         <button type="submit">Resultado</button>
@@ -221,7 +221,7 @@ $NASCIMENTO = "13/09/2001";
  escreva o salário final do vendedor.</h4>";
 ?>
 
-<form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+<form action="<?=$_SERVER['PHP_SELF'];?>#15" id="15" method="POST">
         <p>O salário fixo</p>
         <input type="number" name="salarioFixo" id="salarioFixoId">
 		<p>Valor total vendas mensal</p>
@@ -245,7 +245,7 @@ $NASCIMENTO = "13/09/2001";
  e mostre o valor das prestações.</h4>";
 ?>
 
-<form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+<form action="<?=$_SERVER['PHP_SELF'];?>#16" id="16" method="POST">
         <p>Valor do compra</p>
         <input type="number" name="compra" id="compraId">
 		
@@ -266,7 +266,7 @@ $NASCIMENTO = "13/09/2001";
  acordo com um percentual informado pelo usuário.</h4>";
 ?>
 
-<form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+<form action="<?=$_SERVER['PHP_SELF'];?>#17" id="17" method="POST">
         <p>Custo produto</p>
         <input type="number" name="custoProduto" id="custoProdutoId">
 		
@@ -290,7 +290,7 @@ $NASCIMENTO = "13/09/2001";
  Com base nestes fatos, faça um programa para ler as quantidades de pães e
  de broas, e depois calcular os dados solicitados..</h4>";
 ?>
-<form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+<form action="<?=$_SERVER['PHP_SELF'];?>#18" id="18" method="POST">
         <p>Quantidade de pães vendidos</p>
         <input type="number" name="paoVendido" id="paoVendidoId">
 		<p>Quantidade de Broa vendida</p>
@@ -313,7 +313,7 @@ $NASCIMENTO = "13/09/2001";
  um programa para ler o preço do litro da gasolina e o valor do pagamento, e
  exibir quantos litros ele conseguiu colocar no tanque..</h4>";
 ?>
-<form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+<form action="<?=$_SERVER['PHP_SELF'];?>#19" id="19" method="POST">
         <p>Preço litro gasolina</p>
         <input type="number" name="precoLitro" id="precoLitroId">
 		<p>Quantos reais deseja colocar</p>
@@ -337,7 +337,7 @@ $NASCIMENTO = "13/09/2001";
  perfeito” Se os números forem diferentes escreva “Afaste-se do seu inimigo”.</h4>";
 ?>
 
-<form action="<?=$_SERVER['PHP_SELF'];?>#9" id="9" method="POST">
+<form action="<?=$_SERVER['PHP_SELF'];?>#20" id="20" method="POST">
         <p>Primeiro número</p>
         <input type="number" name="primeiroNumero" id="primeiroNumeroId">
 		<p>Segundo Número</p>
