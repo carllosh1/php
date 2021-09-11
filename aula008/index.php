@@ -97,6 +97,7 @@
                 <input type="tel" name="telefoneAluno" id="telefoneAluno">
                 
             </div>
+            
        
 
            <input class="btn-login" type="submit"  value="Cadastro"> 
