@@ -89,7 +89,8 @@
 
                 <label for="nome">Data: </label>
                 <input type="text" name="dataCadastroPaciente" id="dataCadastroPaciente" placeholder="dd/mm/aaaa">
-            </div class="dadosAbaixo">
+            </div>
+                <div class="dadosAbaixo">
                 <label for="nome">Nome: </label>
                 <input type="text" name="nomePaciente" id="nomePaciente">
                 <hr>
@@ -97,7 +98,7 @@
                 <fieldset>
                     <legend><a href="index.php">Endereços e contatos</a></legend>
                     
-                    <div>
+                   
                         <label for="ruaPaciente">Rua:</label>
                         <input type="text" name="ruaPaciente" id="ruaPaciente">
 
@@ -127,7 +128,7 @@
 
                         <label for="telefonePaciente">Telefone Secundário:</label>
                         <input type="tel" name="telefonePaciente" id="telefonePaciente">
-                    </div>   
+                  </div>   
                 </fieldset>
                
             <div class="but">
